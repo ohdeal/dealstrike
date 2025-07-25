@@ -46,8 +46,8 @@ const medusaConfig = {
     }
   },
   admin: {
-    backendUrl: BACKEND_URL,
-    disable: SHOULD_DISABLE_ADMIN,
+  backendUrl: process.env.BACKEND_URL || "backend-production-cfc3.up.railway.app",
+  disable: false,
   },
   modules: [
     {
